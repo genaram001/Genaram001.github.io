@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Genaram की वेबसाइट</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Genaram Siyag Jat — किसान</title>
   <style>
-    body {
-      background: linear-gradient(135deg, #89f7fe, #66a6ff);
-      font-family: 'Poppins', sans-serif;
-      text-align: center;
-      padding-top: 100px;
-      color: #222;
-    }
-    h1 {
-      font-size: 40px;
-      color: #fff;
-      text-shadow: 2px 2px 4px #000;
-    }
-    img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 4px solid #fff;
-      margin-top: 20px;
-    }
-    p {
-      color: #fff;
-      font-size: 20px;
-      margin-top: 10px;
-    }
-    a {
-      background: #fff;
-      color: #007bff;
-      padding: 10px 20px;
-      border-radius: 20px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 20px;
-      display: inline-block;
-    }
+    :root{font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",Arial;}
+    body{margin:0;background:linear-gradient(180deg,#f6f9ff,#dfeeff);color:#0b1220;display:flex;align-items:flex-start;justify-content:center;min-height:100vh;padding:36px 12px;}
+    .card{width:100%;max-width:760px;background:#fff;border-radius:12px;box-shadow:0 10px 30px rgba(8,20,40,0.08);padding:28px;display:grid;gap:18px;}
+    .head{display:flex;gap:18px;align-items:center;}
+    .avatar{width:110px;height:110px;border-radius:50%;overflow:hidden;flex:0 0 110px;border:4px solid #e9f2ff}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    h1{margin:0;font-size:1.6rem}
+    p.lead{margin:0;color:#334155}
+    .about{background:#fbfdff;border-radius:10px;padding:14px;border:1px solid #eef6ff}
+    .links{display:flex;gap:8px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:8px 12px;border-radius:10px;background:#0b69ff;color:#fff;text-decoration:none;font-weight:600}
+    footer{font-size:0.85rem;color:#64748b;text-align:center;margin-top:6px}
+    @media (max-width:520px){.head{flex-direction:row}.avatar{width:88px;height:88px}}
   </style>
 </head>
 <body>
-  <h1>👋 नमस्ते, मैं Genaram हूँ!</h1>
-  <img src="https://via.placeholder.com/150" alt="Genaram">
-  <p>यह मेरी पहली वेबसाइट है, जो Termux और GitHub से बनाई गई है 🚀</p>
-  <a href="https://github.com/Genaram001" target="_blank">मेरे GitHub पर जाएं</a>
+  <main class="card">
+    <div class="head">
+      <div class="avatar">
+        <!-- Avatar generated from name -->
+        <img src="https://ui-avatars.com/api/?name=Genaram+Siyag+Jat&background=0D8ABC&color=fff&size=256" alt="Genaram Siyag Jat">
+      </div>
+      <div>
+        <h1>Genaram Siyag Jat</h1>
+        <p class="lead">नमस्ते — मैं एक किसान हूँ। मैं खेत में काम करता हूँ और खेती, पशुपालन और गाँव की ज़िन्दगी से जुड़ी जानकारी यहाँ शेयर करूँगा।</p>
+        <div style="margin-top:10px" class="links">
+          <a class="btn" href="https://instagram.com/rajasthani_jat" target="_blank">Instagram: @rajasthani_jat</a>
+          <a class="btn" href="https://github.com/Genaram001" target="_blank" style="background:#111">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="about">
+      <h3 style="margin:0 0 8px 0">मेरे बारे में</h3>
+      <p style="margin:0;color:#334155;line-height:1.5">
+        मैं गाँव का किसान हूँ। फसलों, सिंचाई और जमीन के तरीके मेरे रोज़ के काम हैं। यहाँ मैं खेती के टिप्स, मौसम संबंधी नोट्स और खेत की ज़िन्दगी से जुड़ी छोटी-छोटी बातें शेयर करूँगा। 
+      </p>
+    </section>
+
+    <section>
+      <h3 style="margin:0 0 8px 0">रुचियाँ</h3>
+      <p style="margin:0;color:#334155">किसानी, इंद्रधनुषी फसलें, पशुपालन और स्थानीय समुदाय की मदद।</p>
+    </section>
+
+    <footer>© <span id="yr"></span> Genaram Siyag Jat — बनायी गयी Termux + GitHub से</footer>
+  </main>
+
+  <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
 </body>
 </html>
