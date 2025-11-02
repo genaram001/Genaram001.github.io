@@ -1,95 +1,108 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Genaram Siyag - किसान वेबसाइट</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Genaram Siyag Jat — किसान</title>
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #f0f8f5;
-      margin: 0;
-      padding: 0;
-      color: #333;
+    :root{
+      --accent:#2e8b57;
+      --card:#ffffff;
+      --bg:#f6fff4;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", Arial;
     }
-    header {
-      background: #2e8b57;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      font-size: 22px;
-      letter-spacing: 1px;
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      min-height:100vh;
+      background: linear-gradient(180deg,#f0fff0 0%, #e9f7ee 50%, #ffffff 100%);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:28px;
+      color:#123;
     }
-    .section {
-      max-width: 800px;
-      margin: 30px auto;
-      background: white;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    .wrap{
+      width:100%;
+      max-width:920px;
+      background:var(--card);
+      border-radius:14px;
+      box-shadow:0 12px 30px rgba(20,40,30,0.08);
+      overflow:hidden;
+      display:grid;
+      grid-template-columns: 1fr 360px;
+      gap:0;
     }
-    h2 {
-      color: #2e8b57;
-      border-bottom: 2px solid #2e8b57;
-      display: inline-block;
-      padding-bottom: 4px;
+    @media(max-width:880px){
+      .wrap{grid-template-columns:1fr; padding-bottom:18px}
     }
-    .tips li {
-      margin: 8px 0;
+
+    .left{
+      padding:34px;
     }
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 15px;
+    .right{
+      background: url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=0c8f7df3e2f4b5af3e7b0c6a6b1a2e0a") center/cover no-repeat;
+      padding:28px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:320px;
     }
-    footer {
-      text-align: center;
-      background: #2e8b57;
-      color: white;
-      padding: 15px;
-      font-size: 16px;
+    .avatar{
+      width:140px;height:140px;border-radius:50%;overflow:hidden;border:5px solid rgba(255,255,255,0.9);
+      box-shadow:0 6px 18px rgba(0,0,0,0.12);
+      background:#fff;
     }
-    a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+
+    h1{margin:0;font-size:28px;color:var(--accent)}
+    p.lead{margin:8px 0 18px 0;color:#374151;line-height:1.5}
+    .btn{
+      display:inline-block;padding:10px 16px;border-radius:10px;background:var(--accent);
+      color:#fff;text-decoration:none;font-weight:700;margin-right:8px;
     }
+    .info{margin-top:18px}
+    .info b{color:#0b3b1f}
+    .tips{margin-top:16px;background:#f7fff6;padding:14px;border-radius:8px;border:1px solid rgba(46,139,87,0.08)}
+    .tips li{margin:8px 0;color:#234;line-height:1.4}
+
+    footer{padding:12px;text-align:center;font-size:13px;color:#475569;background:transparent}
   </style>
 </head>
 <body>
+  <article class="wrap">
+    <div class="left">
+      <h1>🌾 Genaram Siyag Jat</h1>
+      <p class="lead">नमस्ते — मैं एक किसान हूँ। खेती, सिंचाई और पशुपालन मेरा धंधा है। यहाँ मैं खेत के अनुभव, टिप्स और गाँव की ज़िन्दगी शेयर करता हूँ।</p>
 
-  <header>
-    🌾 किसान जीवन - Genaram Siyag Jat 🌾
-  </header>
+      <a class="btn" href="https://instagram.com/rajasthani_jat_" target="_blank">Instagram: @rajasthani_jat_</a>
+      <a class="btn" href="https://github.com/Genaram001" style="background:#111" target="_blank">GitHub</a>
 
-  <div class="section">
-    <h2>👨‍🌾 मेरे बारे में</h2>
-    <p>मैं <b>Genaram Siyag</b> राजस्थान का एक मेहनती किसान हूँ। खेतों में मेहनत करना, 
-       फसलों की देखभाल करना और अपने गाँव को हरा-भरा बनाना मेरा सपना है।</p>
-  </div>
+      <div class="info">
+        <h3 style="margin-top:18px;margin-bottom:6px;color:#0b3b1f">खेती के आसान टिप्स</h3>
+        <ul class="tips">
+          <li>1) समय पर सिंचाई — सुबह या शाम को पानी दें।</li>
+          <li>2) जैविक खाद का उपयोग — मिट्टी की सेहत बनाए रखता है।</li>
+          <li>3) फसल चक्र अपनाएं — रोग और कीट कम होंगे।</li>
+          <li>4) बीज से पहले मिट्टी की जांच कर लें।</li>
+          <li>5) सहकर्मी किसानों से अनुभव साझा करें।</li>
+        </ul>
+      </div>
+    </div>
 
-  <div class="section">
-    <h2>🌿 खेती के टिप्स</h2>
-    <ul class="tips">
-      <li>1️⃣ समय पर सिंचाई करें ताकि फसल को पर्याप्त पानी मिले।</li>
-      <li>2️⃣ जैविक खाद का उपयोग करें ताकि मिट्टी की उपजाऊ शक्ति बनी रहे।</li>
-      <li>3️⃣ बीज बोने से पहले मिट्टी की जांच अवश्य करें।</li>
-      <li>4️⃣ कीटनाशकों का उपयोग सावधानी से करें।</li>
-      <li>5️⃣ फसल चक्र बदलते रहें ताकि रोग और कीट कम हों।</li>
-    </ul>
-  </div>
+    <div class="right" aria-hidden="true">
+      <div style="text-align:center;color:white">
+        <div class="avatar" style="margin:0 auto 12px auto">
+          <!-- placeholder avatar (आप चाहें तो यहाँ अपनी image URL बदल लें) -->
+          <img src="https://ui-avatars.com/api/?name=Genaram+Siyag+Jat&background=2e8b57&color=fff&size=512" alt="Genaram">
+        </div>
+        <div style="background:rgba(0,0,0,0.25);padding:8px 12px;border-radius:8px;display:inline-block;font-weight:600">किसान • राजस्थान</div>
+      </div>
+    </div>
+  </article>
 
-  <div class="section gallery">
-    <h2>🏡 गाँव की झलकियाँ</h2>
-    <img src="https://source.unsplash.com/800x400/?farm,rajasthan" alt="Farm 1">
-    <img src="https://source.unsplash.com/800x400/?farmer,india" alt="Farm 2">
-    <img src="https://source.unsplash.com/800x400/?village,rajasthan" alt="Village">
-  </div>
+  <footer>© <span id="yr"></span> Genaram Siyag Jat — बनी Termux + GitHub से</footer>
 
-  <footer>
-    📸 Instagram: <a href="https://instagram.com/rajasthani_jat_" target="_blank">@rajasthani_jat_</a><br>
-    💚 मेहनत ही असली पहचान है 💪
-  </footer>
-
+  <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
 </body>
 </html>
