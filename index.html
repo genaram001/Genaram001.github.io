@@ -1,57 +1,95 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Genaram Siyag Jat — किसान</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genaram Siyag - किसान वेबसाइट</title>
   <style>
-    :root{font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",Arial;}
-    body{margin:0;background:linear-gradient(180deg,#f6f9ff,#dfeeff);color:#0b1220;display:flex;align-items:flex-start;justify-content:center;min-height:100vh;padding:36px 12px;}
-    .card{width:100%;max-width:760px;background:#fff;border-radius:12px;box-shadow:0 10px 30px rgba(8,20,40,0.08);padding:28px;display:grid;gap:18px;}
-    .head{display:flex;gap:18px;align-items:center;}
-    .avatar{width:110px;height:110px;border-radius:50%;overflow:hidden;flex:0 0 110px;border:4px solid #e9f2ff}
-    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
-    h1{margin:0;font-size:1.6rem}
-    p.lead{margin:0;color:#334155}
-    .about{background:#fbfdff;border-radius:10px;padding:14px;border:1px solid #eef6ff}
-    .links{display:flex;gap:8px;flex-wrap:wrap}
-    .btn{display:inline-block;padding:8px 12px;border-radius:10px;background:#0b69ff;color:#fff;text-decoration:none;font-weight:600}
-    footer{font-size:0.85rem;color:#64748b;text-align:center;margin-top:6px}
-    @media (max-width:520px){.head{flex-direction:row}.avatar{width:88px;height:88px}}
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f0f8f5;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #2e8b57;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+    .section {
+      max-width: 800px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2e8b57;
+      border-bottom: 2px solid #2e8b57;
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+    .tips li {
+      margin: 8px 0;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    footer {
+      text-align: center;
+      background: #2e8b57;
+      color: white;
+      padding: 15px;
+      font-size: 16px;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
-  <main class="card">
-    <div class="head">
-      <div class="avatar">
-        <!-- Avatar generated from name -->
-        <img src="https://ui-avatars.com/api/?name=Genaram+Siyag+Jat&background=0D8ABC&color=fff&size=256" alt="Genaram Siyag Jat">
-      </div>
-      <div>
-        <h1>Genaram Siyag Jat</h1>
-        <p class="lead">नमस्ते — मैं एक किसान हूँ। मैं खेत में काम करता हूँ और खेती, पशुपालन और गाँव की ज़िन्दगी से जुड़ी जानकारी यहाँ शेयर करूँगा।</p>
-        <div style="margin-top:10px" class="links">
-          <a class="btn" href="https://instagram.com/rajasthani_jat" target="_blank">Instagram: @rajasthani_jat</a>
-          <a class="btn" href="https://github.com/Genaram001" target="_blank" style="background:#111">GitHub</a>
-        </div>
-      </div>
-    </div>
 
-    <section class="about">
-      <h3 style="margin:0 0 8px 0">मेरे बारे में</h3>
-      <p style="margin:0;color:#334155;line-height:1.5">
-        मैं गाँव का किसान हूँ। फसलों, सिंचाई और जमीन के तरीके मेरे रोज़ के काम हैं। यहाँ मैं खेती के टिप्स, मौसम संबंधी नोट्स और खेत की ज़िन्दगी से जुड़ी छोटी-छोटी बातें शेयर करूँगा। 
-      </p>
-    </section>
+  <header>
+    🌾 किसान जीवन - Genaram Siyag Jat 🌾
+  </header>
 
-    <section>
-      <h3 style="margin:0 0 8px 0">रुचियाँ</h3>
-      <p style="margin:0;color:#334155">किसानी, इंद्रधनुषी फसलें, पशुपालन और स्थानीय समुदाय की मदद।</p>
-    </section>
+  <div class="section">
+    <h2>👨‍🌾 मेरे बारे में</h2>
+    <p>मैं <b>Genaram Siyag</b> राजस्थान का एक मेहनती किसान हूँ। खेतों में मेहनत करना, 
+       फसलों की देखभाल करना और अपने गाँव को हरा-भरा बनाना मेरा सपना है।</p>
+  </div>
 
-    <footer>© <span id="yr"></span> Genaram Siyag Jat — बनायी गयी Termux + GitHub से</footer>
-  </main>
+  <div class="section">
+    <h2>🌿 खेती के टिप्स</h2>
+    <ul class="tips">
+      <li>1️⃣ समय पर सिंचाई करें ताकि फसल को पर्याप्त पानी मिले।</li>
+      <li>2️⃣ जैविक खाद का उपयोग करें ताकि मिट्टी की उपजाऊ शक्ति बनी रहे।</li>
+      <li>3️⃣ बीज बोने से पहले मिट्टी की जांच अवश्य करें।</li>
+      <li>4️⃣ कीटनाशकों का उपयोग सावधानी से करें।</li>
+      <li>5️⃣ फसल चक्र बदलते रहें ताकि रोग और कीट कम हों।</li>
+    </ul>
+  </div>
 
-  <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+  <div class="section gallery">
+    <h2>🏡 गाँव की झलकियाँ</h2>
+    <img src="https://source.unsplash.com/800x400/?farm,rajasthan" alt="Farm 1">
+    <img src="https://source.unsplash.com/800x400/?farmer,india" alt="Farm 2">
+    <img src="https://source.unsplash.com/800x400/?village,rajasthan" alt="Village">
+  </div>
+
+  <footer>
+    📸 Instagram: <a href="https://instagram.com/rajasthani_jat_" target="_blank">@rajasthani_jat_</a><br>
+    💚 मेहनत ही असली पहचान है 💪
+  </footer>
+
 </body>
 </html>
